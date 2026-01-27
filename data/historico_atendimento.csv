@@ -1,6 +1,6 @@
-data,canal,tema,resumo,resolvido
-2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
-2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
-2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
-2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
-2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+data,canal,etapa_funil,tema,resumo,status,proxima_acao,resultado
+2026-01-10,instagram_dm,consideracao,Preco,Cliente pediu valor do plano e formas de pagamento,em_andamento,Enviar tabela de planos e bônus,
+2026-01-12,whatsapp,decisao,Objeção: "caro",Cliente achou caro e comparou com concorrente,resolvido,Reforçar diferenciais + prova social,fechou
+2026-01-14,site_chat,consideracao,Prazos,Cliente perguntou prazo de entrega e política de troca,resolvido,Enviar link de políticas + estimativa,fechou
+2026-01-18,instagram_dm,topo_funil,Duvida geral,Cliente perguntou “como funciona?”,resolvido,Explicar passo a passo + CTA para orçamento,nao_fechou
+2026-01-20,email,decisao,Boleto/Nota fiscal,Cliente pediu nota fiscal e opção boleto,resolvido,Confirmar dados e enviar link de pagamento,fechou
