@@ -1,23 +1,26 @@
 {
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
-  "renda_mensal": 5000.00,
-  "perfil_investidor": "moderado",
-  "objetivo_principal": "Construir reserva de emergência",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
-  "metas": [
-    {
-      "meta": "Completar reserva de emergência",
-      "valor_necessario": 15000.00,
-      "prazo": "2026-06"
+  "negocio": {
+    "nome": "Loja Aurora",
+    "segmento": "e-commerce de skincare",
+    "publico_alvo": "Mulheres 20-40, interessadas em cuidados com a pele e rotina simples",
+    "proposta_valor": "Skincare prático com resultados visíveis e orientação na compra",
+    "tom_de_voz": "direto, cordial, profissional e acessível",
+    "canais": ["Instagram", "WhatsApp", "Site"],
+    "horario_atendimento": "Seg-Sex 09:00-18:00",
+    "diferenciais": [
+      "curadoria de produtos",
+      "envio rápido",
+      "suporte para escolher rotina"
+    ],
+    "politicas": {
+      "prazo_entrega_medio": "3-7 dias úteis",
+      "troca_devolucao": "7 dias após recebimento",
+      "frete_gratis_acima": 199.00,
+      "formas_pagamento": ["Pix", "Cartão", "Boleto"]
     },
-    {
-      "meta": "Entrada do apartamento",
-      "valor_necessario": 50000.00,
-      "prazo": "2027-12"
+    "objetivos": {
+      "principal": "aumentar conversão no WhatsApp e Instagram",
+      "secundarios": ["reduzir abandono por objeção de preço", "padronizar atendimento"]
     }
-  ]
+  }
 }
