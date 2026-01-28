@@ -1,26 +1,25 @@
 {
   "negocio": {
-    "nome": "Loja Aurora",
-    "segmento": "e-commerce de skincare",
-    "publico_alvo": "Mulheres 20-40, interessadas em cuidados com a pele e rotina simples",
-    "proposta_valor": "Skincare prático com resultados visíveis e orientação na compra",
-    "tom_de_voz": "direto, cordial, profissional e acessível",
-    "canais": ["Instagram", "WhatsApp", "Site"],
+    "nome": "Mentoria Conversão Digital",
+    "segmento": "infoproduto/mentoria",
+    "publico_alvo": "Empreendedores digitais que querem vender serviços ou produtos online com mais consistência",
+    "proposta_valor": "Estruturar atendimento e comunicação focados em conversão em até 30 dias",
+    "tom_de_voz": "direto, profissional e acessível",
+    "canais": ["Site Chat"],
     "horario_atendimento": "Seg-Sex 09:00-18:00",
     "diferenciais": [
-      "curadoria de produtos",
-      "envio rápido",
-      "suporte para escolher rotina"
+      "acompanhamento individual",
+      "método validado",
+      "scripts prontos de resposta",
+      "plano de ação semanal"
     ],
     "politicas": {
-      "prazo_entrega_medio": "3-7 dias úteis",
-      "troca_devolucao": "7 dias após recebimento",
-      "frete_gratis_acima": 199.00,
-      "formas_pagamento": ["Pix", "Cartão", "Boleto"]
+      "garantia": "7 dias de garantia incondicional",
+      "suporte": "suporte durante as 4 semanas do programa"
     },
     "objetivos": {
-      "principal": "aumentar conversão no WhatsApp e Instagram",
-      "secundarios": ["reduzir abandono por objeção de preço", "padronizar atendimento"]
+      "principal": "converter visitantes do site em alunos da mentoria",
+      "secundarios": ["reduzir objeção de preço", "aumentar confiança com prova social"]
     }
   }
 }
