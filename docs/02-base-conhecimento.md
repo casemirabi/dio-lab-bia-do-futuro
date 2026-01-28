@@ -2,41 +2,48 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
 | Arquivo | Formato | Utilização no Agente |
-|---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_negocio.json` | JSON | Personalizar recomendações |
-| `oferta_mentoria.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+|--------|--------|----------------------|
+| historico_conversas.csv | CSV | Contextualizar interações anteriores, identificar objeções recorrentes e estágio do funil |
+| perfil_negocio.json | JSON | Definir proposta de valor, tom de voz e diferenciais da mentoria |
+| oferta_mentoria.json | JSON | Fornecer detalhes da mentoria, benefícios, CTAs e respostas para objeções |
+| leads.csv | CSV | Acompanhar status dos leads e apoiar sugestões de follow-up |
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
-
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
+Os dados vão no system prompt e são consultados dinamicamente na pasta data.
 
 ---
 
 ## Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
+```text
+Dados do Negócio:
+- Nome: Mentoria Conversão Digital
+- Proposta de valor: Estruturar atendimento e comunicação focados em conversão em até 30 dias
+- Diferenciais: acompanhamento individual, método validado, scripts prontos de vendas
+- Garantia: 7 dias incondicional
 
-```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+Oferta ativa:
+- Produto: Mentoria Conversão Digital
+- Duração: 4 semanas
+- Principais benefícios: feedback individual, plano de ação semanal, exemplos reais de conversas que convertem
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
+Lead atual:
+- Canal: site_chat
+- Etapa do funil: decisão
+- Objeção identificada: caro
+
+Histórico recente:
+- Lead perguntou valor da mentoria
+- Demonstrou dúvida sobre retorno do investimento
+
+Instrução ao agente:
+Responder de forma direta, profissional e acessível, tratando objeções com empatia e conduzindo o lead ao próximo passo.
 ```
