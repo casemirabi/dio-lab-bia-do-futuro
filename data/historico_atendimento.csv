@@ -1,6 +1,6 @@
 data,canal,etapa_funil,tema,resumo,status,proxima_acao,resultado
-2026-01-10,instagram_dm,consideracao,Preco,Cliente pediu valor do plano e formas de pagamento,em_andamento,Enviar tabela de planos e bônus,
-2026-01-12,whatsapp,decisao,Objeção: "caro",Cliente achou caro e comparou com concorrente,resolvido,Reforçar diferenciais + prova social,fechou
-2026-01-14,site_chat,consideracao,Prazos,Cliente perguntou prazo de entrega e política de troca,resolvido,Enviar link de políticas + estimativa,fechou
-2026-01-18,instagram_dm,topo_funil,Duvida geral,Cliente perguntou “como funciona?”,resolvido,Explicar passo a passo + CTA para orçamento,nao_fechou
-2026-01-20,email,decisao,Boleto/Nota fiscal,Cliente pediu nota fiscal e opção boleto,resolvido,Confirmar dados e enviar link de pagamento,fechou
+2026-01-10,site_chat,consideracao,Preco,Lead perguntou o valor da mentoria,em_andamento,Explicar proposta de valor e garantia,
+2026-01-12,site_chat,decisao,Objeção: caro,Lead achou o investimento alto,resolvido,Reforçar transformação + prova social,fechou
+2026-01-14,site_chat,consideracao,Funcionamento,Lead perguntou como funciona a mentoria,resolvido,Explicar metodologia + CTA,fechou
+2026-01-18,site_chat,topo_funil,Adequacao,Lead quis saber se a mentoria serve para seu tipo de negócio,resolvido,Qualificar lead + CTA,nao_fechou
+2026-01-20,site_chat,decisao,Proximo passo,Lead pediu orientações para avançar,resolvido,Enviar link de inscrição,fechou
