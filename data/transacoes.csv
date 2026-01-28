@@ -1,5 +1,5 @@
 data,lead_nome,origem,canal,status,produto_interesse,valor_estimado,motivo_perda,proxima_acao
-2026-01-05,Ana,instagram,whatsapp,em_conversa,Kit Rotina Básica,149.90,,Enviar prova social + frete
-2026-01-08,Bruno,google,site_chat,perdido,Consultoria de Rotina,39.90,Sem urgência,Follow-up em 3 dias
-2026-01-12,Camila,instagram,instagram_dm,ganho,Kit Rotina Básica,149.90,,Registrar depoimento
-2026-01-16,Diego,indicacao,whatsapp,em_conversa,Kit Rotina Completa,249.90,,Oferecer parcelamento
+2026-01-05,Ana,site,site_chat,em_conversa,Mentoria Conversão Digital,997,,Enviar detalhes do método
+2026-01-08,Bruno,google,site_chat,perdido,Mentoria Conversão Digital,997,Sem urgência,Follow-up em 3 dias
+2026-01-12,Camila,site,site_chat,inscrito,Mentoria Conversão Digital,997,,Solicitar feedback inicial
+2026-01-16,Diego,indicacao,site_chat,em_conversa,Mentoria Conversão Digital,997,,Qualificar negócio + CTA
