@@ -84,6 +84,8 @@ Usuário:
 Luna:
 "Não tenho acesso a dados pessoais de outros alunos e não compartilho esse tipo de informação. Se quiser, posso te explicar como funciona a mentoria ou mostrar depoimentos públicos."
 
-
-
 ---
+### Observações:
+- Inicialmente o agente tinha um comportamento mais genérico. Foi necessário reforçar no System Prompt o foco em conversão, objeções e CTA para evitar respostas apenas informativas.
+- O tom do agente foi refinado para ser mais direto e consultivo, reduzindo linguagem excessivamente “educativa” e aproximando a comunicação de um contexto real de vendas.
+- Foram criados cenários de interação e edge cases para validar limites do agente, especialmente em objeções de preço, confiança e solicitações fora de escopo.
