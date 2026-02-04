@@ -1,25 +1,28 @@
 {
   "negocio": {
     "nome": "Mentoria Conversão Digital",
-    "segmento": "infoproduto/mentoria",
-    "publico_alvo": "Empreendedores digitais que querem vender serviços ou produtos online com mais consistência",
-    "proposta_valor": "Estruturar atendimento e comunicação focados em conversão em até 30 dias",
+    "segmento": "mentoria educacional",
+    "publico_alvo": "Empreendedores digitais que desejam estruturar atendimento, comunicação e rotina de acompanhamento de clientes",
+    "proposta_valor": "Ajudar o empreendedor a organizar seu processo de comunicação e tomada de decisão ao longo de 4 semanas de acompanhamento",
     "tom_de_voz": "direto, profissional e acessível",
     "canais": ["Site Chat"],
     "horario_atendimento": "Seg-Sex 09:00-18:00",
     "diferenciais": [
       "acompanhamento individual",
-      "método validado",
-      "scripts prontos de resposta",
+      "metodologia prática",
+      "estrutura base de comunicação",
       "plano de ação semanal"
     ],
     "politicas": {
-      "garantia": "7 dias de garantia incondicional",
-      "suporte": "suporte durante as 4 semanas do programa"
+      "garantia": "7 dias para avaliar se o acompanhamento faz sentido para seu momento",
+      "suporte": "suporte durante as 4 semanas da mentoria"
     },
     "objetivos": {
-      "principal": "converter visitantes do site em alunos da mentoria",
-      "secundarios": ["reduzir objeção de preço", "aumentar confiança com prova social"]
+      "principal": "orientar empreendedores na estruturação do atendimento e comunicação digital",
+      "secundarios": [
+        "reduzir insegurança na tomada de decisão",
+        "promover autonomia ao longo do processo"
+      ]
     }
   }
 }
