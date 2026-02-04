@@ -4,46 +4,45 @@
 
 | Arquivo | Formato | Utilização no Agente |
 |--------|--------|----------------------|
-| historico_conversas.csv | CSV | Contextualizar interações anteriores, identificar objeções recorrentes e estágio do funil |
-| perfil_negocio.json | JSON | Definir proposta de valor, tom de voz e diferenciais da mentoria |
-| oferta_mentoria.json | JSON | Fornecer detalhes da mentoria, benefícios, CTAs e respostas para objeções |
-| leads.csv | CSV | Acompanhar status dos leads e apoiar sugestões de follow-up |
+| historico_conversas.csv | CSV | Contextualizar interações anteriores e identificar estágio da jornada do usuário |
+| perfil_negocio.json | JSON | Definir proposta da mentoria, tom de voz e abordagem de acompanhamento |
+| oferta_mentoria.json | JSON | Fornecer estrutura do programa, objetivos, benefícios e próximos passos |
+| participantes.csv | CSV | Acompanhar estado da jornada dos participantes e sugerir ações educativas |
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt
+Os arquivos CSV e JSON são carregados no início da sessão do agente e mantidos em memória local.
 
 ### Como os dados são usados no prompt?
-Os dados vão no system prompt e são consultados dinamicamente na pasta data.
+Os dados não são inseridos integralmente no system prompt. Apenas os trechos relevantes (como estágio da jornada, informações da mentoria e histórico recente) são recuperados dinamicamente e adicionados ao contexto da conversa.
 
 ---
 
 ## Exemplo de Contexto Montado
 
 ```text
-Dados do Negócio:
+Dados da Mentoria:
 - Nome: Mentoria Conversão Digital
-- Proposta de valor: Estruturar atendimento e comunicação focados em conversão em até 30 dias
-- Diferenciais: acompanhamento individual, método validado, scripts prontos de vendas
-- Garantia: 7 dias incondicional
+- Proposta: Organizar atendimento e comunicação ao longo de 4 semanas
+- Diferenciais: acompanhamento individual, metodologia prática, plano de ação semanal
+- Garantia: 7 dias para avaliação
 
-Oferta ativa:
-- Produto: Mentoria Conversão Digital
+Programa ativo:
+- Nome: Mentoria Conversão Digital
 - Duração: 4 semanas
-- Principais benefícios: feedback individual, plano de ação semanal, exemplos reais de conversas que convertem
+- Objetivos principais: estruturar comunicação, organizar processo e desenvolver autonomia
 
-Lead atual:
+Participante atual:
 - Canal: site_chat
-- Etapa do funil: decisão
-- Objeção identificada: caro
+- Etapa da jornada: onboarding
+- Situação: iniciando diagnóstico do negócio
 
 Histórico recente:
-- Lead perguntou valor da mentoria
-- Demonstrou dúvida sobre retorno do investimento
+- Usuário pediu explicação da metodologia
+- Demonstrou insegurança sobre próximos passos
 
 Instrução ao agente:
-Responder de forma direta, profissional e acessível, tratando objeções com empatia e conduzindo o lead ao próximo passo.
-```
+Responder de forma clara, profissional e acessível, orientando o usuário e sugerindo ações práticas de acordo com sua etapa na mentoria.
