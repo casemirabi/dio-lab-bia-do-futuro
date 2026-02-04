@@ -2,41 +2,47 @@
   {
     "nome": "Mentoria Conversão Digital",
     "tipo": "mentoria",
-    "preco": 997.00,
     "duracao": "4 semanas",
-    "para_quem": "Empreendedores digitais que já tentaram vender online e não tiveram resultado consistente",
+    "para_quem": "Empreendedores digitais que desejam estruturar atendimento e comunicação para melhorar resultados online",
     "nao_indicado_para": [
-      "quem busca resultados imediatos sem aplicar as orientações",
-      "quem não atua no digital"
+      "quem não atua no digital",
+      "quem não pretende aplicar as orientações durante o acompanhamento"
+    ],
+    "objetivos": [
+      "organizar o processo de atendimento",
+      "melhorar clareza da comunicação",
+      "criar rotina prática de acompanhamento de leads",
+      "desenvolver autonomia na tomada de decisões"
     ],
     "beneficios": [
-      "estrutura completa de atendimento focado em conversão",
-      "scripts prontos para responder clientes e fechar vendas",
-      "feedback individual durante o programa",
-      "plano de ação semanal personalizado",
-      "acesso a exemplos reais de conversas que convertem"
+      "diagnóstico inicial do atendimento",
+      "estrutura orientada de comunicação",
+      "feedback individual ao longo do processo",
+      "plano de ação semanal",
+      "exemplos reais de atendimentos analisados"
     ],
     "como_funciona": [
-      "diagnóstico inicial do atendimento atual",
-      "entrega dos scripts e framework de vendas",
+      "levantamento do contexto atual do negócio",
+      "definição de objetivos pessoais",
+      "entrega de estrutura base de comunicação",
       "acompanhamento semanal",
-      "ajustes práticos conforme evolução do aluno"
+      "ajustes práticos conforme evolução"
     ],
-    "garantia": "7 dias de garantia incondicional",
-    "objeções": {
-      "caro": [
-        "Entendo — muita gente pensa isso no início. Por isso sempre comparo com o custo de continuar tentando vender sem resultado. A mentoria foi criada para se pagar com os primeiros fechamentos.",
-        "O investimento é único, mas a estrutura que você aprende pode ser usada em todas as suas vendas futuras."
+    "garantia": "7 dias de garantia para avaliar se o programa faz sentido para seu momento",
+    "duvidas_comuns": {
+      "valor": [
+        "O foco da mentoria é estruturar seu processo para gerar consistência. O investimento existe, mas o principal é o comprometimento com a aplicação.",
+        "Você pode usar os 7 dias iniciais para avaliar se o acompanhamento atende suas expectativas."
       ],
       "confianca": [
-        "Posso te mostrar depoimentos reais de alunos que aplicaram o método.",
-        "Você tem 7 dias de garantia. Se não fizer sentido, pode cancelar sem burocracia."
+        "Durante a mentoria você recebe acompanhamento individual e pode ver exemplos reais trabalhados no programa.",
+        "O processo é transparente e você pode interromper dentro do período de garantia."
       ]
     },
-    "cta": [
-      "Quer que eu te explique como funciona a primeira semana?",
-      "Posso te mostrar alguns resultados reais?",
-      "Quer avançar para a inscrição agora?"
+    "proximos_passos": [
+      "Posso te fazer algumas perguntas rápidas para entender seu negócio?",
+      "Quer começar com um diagnóstico inicial agora?",
+      "Posso te explicar como funciona a primeira semana do acompanhamento?"
     ]
   }
 ]
