@@ -1,149 +1,214 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 Luna — Agente de Acompanhamento Estruturado com IA Generativa
 
-## Contexto
+## 📌 Contexto
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+Empreendedores digitais não travam por falta de informação — travam por falta de estrutura.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+Recebem mensagens, respondem quando dá, improvisam, tentam organizar tudo ao mesmo tempo… e acabam sem clareza nem consistência.
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+A Luna foi criada para resolver isso.
 
----
+Ela é um agente de acompanhamento estruturado em 4 semanas, focado em:
 
-## O Que Você Deve Entregar
+- Organizar comunicação
+- Tomar decisões progressivas
+- Executar micro-ações práticas
+- Desenvolver autonomia operacional
 
-### 1. Documentação do Agente
+Tudo isso rodando localmente com IA generativa leve via Ollama.
 
-Defina **o que** seu agente faz e **como** ele funciona:
+## 🎯 O Que a Luna Faz
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+A Luna ajuda o empreendedor a:
 
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+- Resolver uma coisa por vez
+- Criar mensagens básicas de atendimento
+- Organizar rotina de resposta
+- Evoluir semana a semana
+- Evitar pular etapas
 
----
+Ela não:
 
-### 2. Base de Conhecimento
+- Cria funis complexos na Semana 1
+- Propõe automação precoce
+- Reinicia decisões já tomadas
+- Promete resultados financeiros
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+## 🧠 Como Funciona
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+### 📆 Método das 4 Semanas
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
+#### 🟢 Semana 1 — Base
 
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- Mensagem de primeiro contato
+- Mensagem de objeção (ex: preço)
+- Mensagem de fechamento
+- Rotina mínima de resposta
 
----
+⚠️ Nada de funil ou script completo nessa fase.
 
-### 3. Prompts do Agente
+#### 🟡 Semana 2 — Organização Leve
 
-Documente os prompts que definem o comportamento do seu agente:
+- Fluxo simples de atendimento
+- Checklist curto
+- Organização por blocos
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+#### 🟠 Semana 3 — Otimização
 
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+- 2–3 métricas simples
+- Testes leves
+- Ajustes práticos
 
----
+#### 🔵 Semana 4 — Autonomia
 
-### 4. Aplicação Funcional
+- Documentação em 1 página
+- Rotina semanal fixa
+- Backlog de melhorias
 
-Desenvolva um **protótipo funcional** do seu agente:
+## 🏗 Arquitetura
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
+### Diagrama
 
-📁 **Pasta:** [`src/`](./src/)
+```mermaid
+flowchart TD
+    A[Usuário] --> B[UI Streamlit]
+    B --> C[FastAPI - app.py]
+    C --> D[Arquivos Base]
+    D --> E[Ollama - qwen2.5:3b]
+    E --> C
+    C --> F[Registro no CSV]
+    F --> B
+    B --> A
 
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+# 🌙 Luna — Agente Operacional 4 Semanas
 
 ---
 
-## Ferramentas Sugeridas
+## 🧩 Componentes
 
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+| Componente            | Tecnologia            |
+|-----------------------|-----------------------|
+| UI                    | Streamlit             |
+| API                   | FastAPI               |
+| LLM                   | qwen2.5:3b via Ollama |
+| Persistência          | CSV                   |
+| Controle comportamental | System Prompt      |
 
 ---
 
-## Estrutura do Repositório
+## 📂 Estrutura do Projeto
 
-```
-📁 lab-agente-financeiro/
+luna-agente-4semanas/
 │
-├── 📄 README.md
+├── README.md
+├── 01_perfil_agente.md
+├── 02_perfil_empreendedor.yaml
+├── 03_historico_conversas.csv
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── app.py
+├── ui.py
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── docs/
+│ ├── DOCUMENTACAO_AGENTE.md
+│ ├── BASE_DE_CONHECIMENTO.md
+│ ├── SYSTEM_PROMPT.md
+│ ├── AVALIACAO_E_METRICAS.md
+│ └── PITCH.md
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+└── requirements.txt
+
+------------------------------------------------------------------------
+
+## 🚀 Como Rodar o Projeto
+
+### 1️⃣ Instalar dependências
+
+``` bash
+pip install fastapi uvicorn streamlit requests pydantic
 ```
 
----
+### 2️⃣ Instalar e rodar Ollama
 
-## Dicas Finais
+``` bash
+ollama pull qwen2.5:3b
+ollama serve
+```
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+### 3️⃣ Rodar a API
+
+``` bash
+uvicorn app:app --reload --port 8000
+```
+
+### 4️⃣ Rodar a Interface
+
+``` bash
+streamlit run ui.py
+```
+
+Abrir no navegador:
+
+    http://localhost:8501
+
+------------------------------------------------------------------------
+
+## 🛡 Segurança e Anti-Alucinação
+
+A Luna:
+
+-   Só utiliza dados locais\
+-   Não acessa APIs externas\
+-   Não executa ações reais\
+-   Não envia mensagens automaticamente\
+-   Não compartilha dados de terceiros\
+-   Não promete resultados
+
+Controle feito via:
+
+-   Prompt estruturado\
+-   Controle de escopo\
+-   Continuidade via histórico CSV
+
+------------------------------------------------------------------------
+
+## 📊 Avaliação
+
+O agente é avaliado por:
+
+-   Continuidade (não repetir decisões)\
+-   Controle de escopo\
+-   Micro-execução (10--30 min)\
+-   Linguagem natural\
+-   Limite de perguntas\
+-   Segurança
+
+**Maturidade atual:**\
+Beta Avançado (\~90--95%)
+
+------------------------------------------------------------------------
+
+## 🔍 Diferencial
+
+A maioria dos agentes:
+
+-   Explica demais\
+-   Sugere demais\
+-   Complica demais
+
+A Luna:
+
+-   Reduz\
+-   Organiza\
+-   Estrutura\
+-   Executa\
+-   Evolui
+
+Ela não ensina marketing.\
+Ela cria base operacional.
+
+------------------------------------------------------------------------
+
+## 🎤 Pitch
+
+A Luna organiza o básico.\
+E o básico bem feito escala sozinho.

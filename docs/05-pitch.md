@@ -1,59 +1,134 @@
-# Pitch (3 minutos)
+# 🎤 Pitch (3 minutos)
 
-## Roteiro Sugerido
-
-### 1. O Problema (30 seg)
-
-Empreendedores digitais frequentemente se sentem perdidos ao tentar organizar seu atendimento, comunicação e tomada de decisão. Muitos não sabem por onde começar, quais ações priorizar ou como acompanhar sua própria evolução. Isso gera insegurança, tentativas aleatórias e dificuldade em criar um processo consistente.
+## Luna — Agente de Acompanhamento Estruturado para Empreendedores
 
 ---
 
-### 2. A Solução (1 min)
+## 🧩 1. O Problema (30 segundos)
 
-Criamos a Luna, uma assistente de mentoria digital baseada em IA generativa.
+Empreendedores digitais não fracassam por falta de esforço.  
+Eles travam porque não têm estrutura.
 
-A Luna atua como um ponto inicial de orientação, ajudando o usuário a entender seu contexto, iniciar um diagnóstico do negócio e seguir uma jornada de acompanhamento de 4 semanas.
+Recebem mensagens no WhatsApp, respondem quando dá, improvisam respostas, testam coisas aleatórias…  
+E no fim da semana sentem que nada evoluiu.
 
-Ela utiliza uma base de conhecimento estruturada com informações da mentoria, histórico de interações e estágio da jornada do usuário. Com isso, consegue oferecer orientações personalizadas, sugerir próximos passos educativos e acompanhar a evolução de cada participante.
+O problema não é falta de estratégia.
 
-Tudo isso roda localmente, usando um modelo de linguagem via Ollama, garantindo privacidade dos dados.
+É falta de:
 
----
+- Organização básica  
+- Processo claro  
+- Decisão progressiva  
+- Execução consistente  
 
-### 3. Demonstração (1 min)
-
-Na demonstração, mostramos um usuário iniciando conversa com a Luna.
-
-Primeiro, ele pergunta como funciona a mentoria.  
-A Luna explica o processo e convida para um diagnóstico inicial.
-
-Em seguida, o usuário demonstra insegurança.  
-A Luna orienta de forma acolhedora e sugere próximos passos.
-
-Por fim, mostramos como a Luna consulta a base de conhecimento para identificar a etapa da jornada e adaptar suas respostas.
+Eles tentam organizar tudo de uma vez — e isso paralisa.
 
 ---
 
-### 4. Diferencial e Impacto (30 seg)
+## 🚀 2. A Solução (1 minuto)
 
-O diferencial da Luna é atuar como facilitadora de mentoria, não como agente de vendas.
+Criamos a **Luna**.
 
-Ela promove autonomia, organização e clareza de processo, ajudando empreendedores a estruturarem sua comunicação de forma consciente.
+Não é um chatbot de vendas.  
+Não é um curso gravado.  
+Não é um funil automático.
 
-O impacto é democratizar o acesso à orientação inicial, reduzindo barreiras para quem não tem suporte especializado e oferecendo um caminho mais humano e acessível para desenvolvimento digital.
+A Luna é um **agente de acompanhamento estruturado em 4 semanas**.
+
+Ela ajuda o empreendedor a:
+
+- Resolver uma coisa por vez  
+- Criar mensagens básicas  
+- Organizar rotina de atendimento  
+- Evoluir progressivamente  
+
+O diferencial é o **controle de escopo**.
+
+Ela:
+
+- Nunca pula etapas  
+- Nunca propõe funil antes do básico  
+- Nunca reinicia decisões já tomadas  
+
+Cada resposta termina com:
+
+- Diagnóstico curto  
+- Decisão clara  
+- Próxima ação executável (10–30 min)  
+
+E tudo roda localmente via **Ollama**, usando um modelo leve (**qwen2.5:3b**), garantindo privacidade e baixo custo.
 
 ---
 
-## Checklist do Pitch
+## 🖥 3. Demonstração (1 minuto)
+
+Na prática:
+
+O usuário diz:
+
+> “Meu atendimento está confuso.”
+
+A Luna não cria um funil.  
+Ela não sugere automação.
+
+Ela responde:
+
+- Vamos começar pela mensagem de primeiro contato.  
+- Escreva uma versão simples.  
+- Use nos próximos 5 leads.  
+- Ajuste depois.  
+
+Depois de alguns dias, o usuário volta.
+
+Ela consulta o histórico.  
+Percebe que a decisão já foi tomada.  
+E avança para execução — não reinicia o processo.
+
+Isso cria **evolução real**.
+
+---
+
+## 🎯 4. Diferencial e Impacto (30 segundos)
+
+O diferencial da Luna é simples:
+
+Ela não ensina marketing.  
+Ela cria **estrutura operacional**.
+
+Ela força:
+
+- Clareza  
+- Sequência  
+- Micro-execução  
+- Autonomia  
+
+O impacto?
+
+Transformar empreendedores desorganizados em operadores conscientes do próprio processo.
+
+Sem complexidade.  
+Sem promessas milagrosas.  
+Sem depender de ferramentas caras.
+
+A Luna organiza o básico.
+
+E o básico bem feito escala sozinho.
+
+---
+
+## ✅ Checklist do Pitch
 
 - [x] Duração máxima de 3 minutos  
-- [x] Problema claramente definido  
-- [x] Solução demonstrada na prática  
-- [x] Diferencial explicado  
-- [x] Áudio e vídeo com boa qualidade  
+- [x] Problema claro e específico  
+- [x] Solução objetiva  
+- [x] Demonstração prática  
+- [x] Diferencial técnico explicado  
+- [x] Modelo leve e local destacado  
 
 ---
 
-## Link do Vídeo
+## 🔗 Link do Vídeo
 
-[cole aqui o link do seu pitch]
+[Assistir ao Pitch da Luna](https://drive.google.com/file/d/1S7uwDQTVQcMyf0eIDOtEQDM2m-YqnnIw/view?usp=sharing)
+
+

@@ -1,0 +1,66 @@
+# Perfil do Empreendedor — Mentoria 4 Semanas
+versao: "1.0"
+
+empreendedor:
+  nome: "Bianca"
+  cargo: "Gerente"
+  disponibilidade_minutos_dia: 15
+  preferencia_tom: "direto"
+  restricoes:
+    - "sem anuncios pagos"
+
+negocio:
+  nome: "Se Ame"
+  nicho: "Perfumarias"
+  oferta_principal: "Perfumes importados e contratipos com pronta entrega"
+  ticket_medio: "R$ 149"
+  diferencial: "Atendimento personalizado e indicação de fragrância por perfil"
+  canal_principal: "WhatsApp"
+  canais_secundarios: ["Instagram", "Indicação"]
+  volume_contatos_semana: 15
+  ciclo_de_venda: "curto"
+  etapa_mais_fraca: "converter"
+
+objetivos_4_semanas:
+  objetivo_macro: "Organizar atendimento no WhatsApp e aumentar conversão"
+  metas:
+    - metrica: "tempo_resposta"
+      alvo: "< 1h"
+    - metrica: "conversas_semana"
+      alvo: "25"
+    - metrica: "fechamentos_semana"
+      alvo: "8"
+
+desafios:
+  principais:
+    - "Demoro para responder e perco o timing"
+    - "Não tenho roteiro de venda estruturado"
+  causas_percebidas:
+    - "Falta de rotina diária"
+    - "Mensagens improvisadas"
+  recursos_atuais:
+    - "WhatsApp Business"
+    - "Instagram ativo"
+    - "Lista de clientes antigos"
+
+processo_atual (resumo):
+  como_chega: "Instagram -> WhatsApp"
+  como_responde: "Respondo manualmente quando consigo"
+  como_fecha: "Envio fotos e preço e aguardo resposta"
+  como_faz_followup: "Raramente faço"
+  como_registra: "Não registro formalmente"
+
+acompanhamento_estado:
+  semana_atual: 1
+  foco_da_semana: "Diagnóstico e Base"
+  objetivo_7_dias: "Criar mensagens padrão e organizar rotina de atendimento"
+  progresso_percentual: 0
+  gargalo_atual: "Falta de padrão no atendimento"
+  decisoes_tomadas_recentes: []
+  proxima_acao:
+    descricao: "Criar 3 mensagens padrão (abertura, oferta, fechamento)"
+    prazo: "2026-02-13"
+  metricas_minimas:
+    entradas_semana: 15
+    respondidos_24h: 15
+    fechamentos_semana: 5

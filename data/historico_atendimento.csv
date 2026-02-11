@@ -1,6 +1,0 @@
-data,canal,etapa_jornada,tema,resumo,status,proxima_acao,resultado
-2026-01-10,site_chat,avaliacao_inicial,Apresentacao,Usuário perguntou como funciona a mentoria,em_andamento,Explicar estrutura e objetivos,
-2026-01-12,site_chat,avaliacao_inicial,Duvida_valor,Usuário demonstrou preocupação com o investimento,resolvido,Explicar proposta de aprendizado e garantia,aceitou_continuar
-2026-01-14,site_chat,onboarding,Funcionamento,Usuário quis entender metodologia da mentoria,resolvido,Explicar etapas do acompanhamento,iniciado
-2026-01-18,site_chat,avaliacao_inicial,Adequacao,Usuário perguntou se a mentoria se aplica ao seu negócio,resolvido,Coletar informações do negócio,nao_iniciado
-2026-01-20,site_chat,onboarding,Proximos_passos,Usuário pediu orientação sobre como começar,resolvido,Iniciar diagnóstico inicial,iniciado

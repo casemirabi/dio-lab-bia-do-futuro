@@ -1,48 +1,215 @@
-# Base de Conhecimento
+# 📚 Base de Conhecimento
 
-## Dados Utilizados
-
-| Arquivo | Formato | Utilização no Agente |
-|--------|--------|----------------------|
-| historico_conversas.csv | CSV | Contextualizar interações anteriores e identificar estágio da jornada do usuário |
-| perfil_negocio.json | JSON | Definir proposta da mentoria, tom de voz e abordagem de acompanhamento |
-| oferta_mentoria.json | JSON | Fornecer estrutura do programa, objetivos, benefícios e próximos passos |
-| participantes.csv | CSV | Acompanhar estado da jornada dos participantes e sugerir ações educativas |
+**Versão Atual — Agente 4 Semanas (Ollama / qwen2.5:3b)**
 
 ---
 
-## Estratégia de Integração
+## 1️⃣ Dados Utilizados
+
+| Arquivo                         | Formato   | Utilização no Agente |
+|----------------------------------|-----------|----------------------|
+| 01_perfil_agente.md             | Markdown  | Define personalidade, método, regras de escopo e estrutura obrigatória de resposta |
+| 02_perfil_empreendedor.yaml     | YAML      | Armazena contexto do negócio, objetivos, gargalos e estado atual da jornada |
+| 03_historico_conversas.csv      | CSV       | Mantém continuidade, decisões tomadas e evolução ao longo das semanas |
+
+---
+
+## 2️⃣ Função de Cada Arquivo
+
+### 🧠 01_perfil_agente.md
+
+Responsável por definir:
+
+- Método das 4 semanas  
+- Controle de escopo  
+- Regras de continuidade  
+- Estrutura fixa da resposta  
+- Limitação de perguntas  
+- Tom de voz permitido e proibido  
+
+Esse arquivo garante que o modelo:
+
+- Não pule etapas  
+- Não proponha soluções complexas cedo demais  
+- Não reinicie decisões já tomadas  
+- Não utilize linguagem institucional  
+
+---
+
+### 📊 02_perfil_empreendedor.yaml
+
+Responsável por armazenar:
+
+- Nome e contexto do negócio  
+- Canal principal  
+- Volume de leads  
+- Objetivos das 4 semanas  
+- Gargalo atual  
+- Semana ativa  
+- Progresso estimado  
+- Métricas mínimas  
+
+Esse arquivo permite:
+
+- Personalização real  
+- Decisões baseadas no contexto atual  
+- Controle do estágio da jornada  
+
+---
+
+### 🗂 03_historico_conversas.csv
+
+Responsável por registrar:
+
+- Data e canal  
+- Semana ativa  
+- Tema da conversa  
+- Resumo da interação  
+- Decisão tomada  
+- Próxima ação  
+- Prazo  
+- Status  
+- Resultado  
+
+Função principal:
+
+- Evitar repetição de decisões  
+- Garantir continuidade  
+- Forçar avanço de estado (decidir → executar → testar → ajustar)  
+
+---
+
+## 3️⃣ Estratégia de Integração
 
 ### Como os dados são carregados?
-Os arquivos CSV e JSON são carregados no início da sessão do agente e mantidos em memória local.
 
-### Como os dados são usados no prompt?
-Os dados não são inseridos integralmente no system prompt. Apenas os trechos relevantes (como estágio da jornada, informações da mentoria e histórico recente) são recuperados dinamicamente e adicionados ao contexto da conversa.
+A cada requisição no `app.py`:
+
+- Os três arquivos são lidos  
+- O histórico recente é limitado (ex.: últimas 50 linhas)  
+- O conteúdo é injetado como contexto no LLM  
+- O modelo não armazena memória própria  
+- Toda continuidade depende dos arquivos locais  
 
 ---
 
-## Exemplo de Contexto Montado
+### Como os dados são usados no prompt?
 
-```text
-Dados da Mentoria:
-- Nome: Mentoria Conversão Digital
-- Proposta: Organizar atendimento e comunicação ao longo de 4 semanas
-- Diferenciais: acompanhamento individual, metodologia prática, plano de ação semanal
-- Garantia: 7 dias para avaliação
+O agente recebe:
 
-Programa ativo:
-- Nome: Mentoria Conversão Digital
-- Duração: 4 semanas
-- Objetivos principais: estruturar comunicação, organizar processo e desenvolver autonomia
+- System Prompt (regras fixas)  
+- Perfil do agente  
+- Perfil do empreendedor  
+- Histórico recente  
 
-Participante atual:
-- Canal: site_chat
-- Etapa da jornada: onboarding
-- Situação: iniciando diagnóstico do negócio
+⚠️ Os arquivos não são inseridos como texto irrelevante.
+O conteúdo é enviado porque o modelo é leve e o volume é pequeno.
 
-Histórico recente:
-- Usuário pediu explicação da metodologia
-- Demonstrou insegurança sobre próximos passos
+---
 
-Instrução ao agente:
-Responder de forma clara, profissional e acessível, orientando o usuário e sugerindo ações práticas de acordo com sua etapa na mentoria.
+## 4️⃣ Lógica de Continuidade
+
+A continuidade funciona da seguinte forma:
+
+1. O histórico é consultado  
+2. Se existir decisão anterior registrada:
+   - O agente não repete  
+   - Avança para execução  
+3. Se não existir decisão:
+   - O agente define uma nova  
+
+Cada nova interação pode gerar:
+
+- Decisão  
+- Próxima ação  
+- Prazo  
+
+Isso garante evolução progressiva.
+
+---
+
+## 5️⃣ Exemplo de Contexto Montado (Atual)
+
+### Perfil do Agente
+
+- Método estruturado em 4 semanas  
+- Controle de escopo ativo  
+- Linguagem natural de WhatsApp  
+- Proibido pular etapas  
+
+### Perfil do Empreendedor
+
+- Canal principal: WhatsApp  
+- Leads/semana: 5  
+- Gargalo atual: responder rápido  
+- Semana atual: 1  
+- Objetivo: organizar atendimento  
+
+### Histórico recente
+
+- Decisão tomada: padronizar primeiro contato  
+- Próxima ação: escrever mensagem base  
+- Status: pendente  
+
+**Instrução ao modelo:**
+
+- Avançar para execução, sem redefinir decisão  
+- Entregar ação prática de até 30 minutos  
+- Manter linguagem humana  
+
+---
+
+## 6️⃣ Princípios da Base de Conhecimento
+
+A base foi desenhada para garantir:
+
+- 🔁 Continuidade real  
+- 🔒 Controle de escopo  
+- 📈 Evolução progressiva  
+- 🧩 Decisões rastreáveis  
+- ⚖️ Baixo consumo computacional  
+
+---
+
+## 7️⃣ Diferença da Versão Anterior
+
+| Antes | Agora |
+|-------|--------|
+| Mentoria explicativa | Acompanhamento operacional |
+| Foco em explicar metodologia | Foco em executar micro-passos |
+| Estrutura comercial | Estrutura técnica e progressiva |
+| Dados genéricos | Dados estruturados por estágio |
+
+---
+
+## 8️⃣ Limitações da Base
+
+- Não acessa APIs externas  
+- Não conecta com CRM  
+- Não envia mensagens automaticamente  
+- Não valida dados externos  
+- Não aprende sozinho (depende dos arquivos)  
+
+---
+
+## 9️⃣ Próximas Evoluções Técnicas Possíveis
+
+- Extração automática de decisão e próxima ação do texto  
+- Separação de histórico por `session_id`  
+- Compactação inteligente do contexto  
+- Indexação por estágio da semana  
+- Sistema de métricas automatizado  
+
+---
+
+## 🔟 Estado Atual
+
+Base funcional para:
+
+- Agente local via Ollama  
+- UI própria (Streamlit)  
+- Persistência em CSV  
+- Evolução semana a semana  
+- Controle comportamental via prompt  
+
+**Maturidade atual:** Beta Avançado

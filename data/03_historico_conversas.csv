@@ -1,0 +1,5 @@
+data_hora,canal,semana,etapa,tema,resumo,decisao,proxima_acao,prazo,status,resultado
+2026-02-11 14:55,whatsapp,1,conversa,geral,Olá!,,,,registrado,
+2026-02-11 14:57,whatsapp,1,conversa,geral,Preciso de mensagens padrões.,,,,registrado,
+2026-02-11 14:58,whatsapp,1,conversa,geral,Quero saber a previsão do tempo para hoje.,,,,registrado,
+2026-02-11 14:58,whatsapp,1,conversa,geral,Qual é a minha maior dificuldade?,,,,registrado,
