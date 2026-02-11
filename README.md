@@ -152,7 +152,7 @@ Abrir no navegador:
 
 ------------------------------------------------------------------------
 
-## 🛡 Segurança e Anti-Alucinação
+## 🛡 Segurança e Anti-Alucinação 
 
 A Luna:
 
