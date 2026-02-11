@@ -80,6 +80,8 @@ flowchart TD
     F --> B
     B --> A
 
+```
+
 # 🌙 Luna — Agente Operacional 4 Semanas
 
 ---
